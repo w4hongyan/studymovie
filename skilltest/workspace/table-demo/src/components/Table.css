@@ -1,0 +1,113 @@
+.table-container {
+  font-family: system-ui, -apple-system, sans-serif;
+  border: 1px solid #e2e8f0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #1a202c;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.table-controls {
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  cursor: pointer;
+  background-color: #f7fafc;
+  user-select: none;
+  font-weight: 600;
+  color: #4a5568;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+th:hover {
+  background-color: #edf2f7;
+}
+
+th.ascending::after {
+  content: ' ▲';
+  font-size: 0.8em;
+  position: absolute;
+  right: 8px;
+  color: #718096;
+}
+
+th.descending::after {
+  content: ' ▼';
+  font-size: 0.8em;
+  position: absolute;
+  right: 8px;
+  color: #718096;
+}
+
+tr:hover {
+  background-color: #f7fafc;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #cbd5e0;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #4a5568;
+  transition: all 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #edf2f7;
+  border-color: #cbd5e0;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #f7fafc;
+}
+
+.pagination span {
+  font-size: 0.9rem;
+  color: #4a5568;
+}

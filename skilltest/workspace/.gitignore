@@ -1,0 +1,27 @@
+# Dependency directories
+node_modules/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Temporary files
+~$*
+*.tmp
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+
+# Editor
+.vscode/
+.idea/
+
+# Generated Artifacts (optional - keeping generated PPTX for now as it might be the desired output, but ignoring lock files)
+# Life_Coding.pptx 
